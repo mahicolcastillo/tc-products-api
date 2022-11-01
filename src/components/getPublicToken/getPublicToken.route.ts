@@ -5,7 +5,7 @@ import getPublicTokenController     from './getPublicToken.controller';
 import routeNames                   from '../../routes/routesNames';
 import validation                   from '../../middleware/getPublicToken.middleware';
 
-const getExampleRoute = (app: Express, globalPath: string) => {
+const getPublicTokenRoute = (app: Express, globalPath: string) => {
     app.get(
         `${globalPath}/${routeNames.getPublicToken.name}`,
         validation,
@@ -14,4 +14,4 @@ const getExampleRoute = (app: Express, globalPath: string) => {
     );
 }
 
-export default getExampleRoute;
+export default getPublicTokenRoute;

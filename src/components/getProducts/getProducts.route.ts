@@ -6,7 +6,7 @@ import routeNames                   from '../../routes/routesNames';
 import validation                   from '../../middleware/getProducts.middleware';
 import validateJWT                  from '../../middleware/validateJWT.middleware';
 
-const getExampleRoute = (app: Express, globalPath: string) => {
+const getProductsRoute = (app: Express, globalPath: string) => {
     app.get(
         `${globalPath}/${routeNames.getProducts.name}`,
         validation,
@@ -16,4 +16,4 @@ const getExampleRoute = (app: Express, globalPath: string) => {
     );
 }
 
-export default getExampleRoute;
+export default getProductsRoute;
