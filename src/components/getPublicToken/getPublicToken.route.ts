@@ -1,18 +1,16 @@
 import { Express }                  from 'express';
 
 import expressValidatorMiddleware   from '../../middleware/express-validator.middleware';
-import getExampleController         from './getExample.controller';
+import getPublicTokenController     from './getPublicToken.controller';
 import routeNames                   from '../../routes/routesNames';
-import validation                   from '../../middleware/getExample.middleware';
-import validateJWT                  from '../../middleware/validateJWT.middleware';
+import validation                   from '../../middleware/getPublicToken.middleware';
 
 const getExampleRoute = (app: Express, globalPath: string) => {
     app.get(
-        `${globalPath}/${routeNames.getExample.name}`,
+        `${globalPath}/${routeNames.getPublicToken.name}`,
         validation,
         expressValidatorMiddleware,
-        validateJWT,
-        getExampleController
+        getPublicTokenController
     );
 }
 

@@ -22,6 +22,18 @@ const config = parseConfig({
             required    : true,
         },
     },
+    microservices: {
+        MS_GENERATE_TOKEN: {
+            info        : "Microservice for generate token",
+            env         : "MS_GENERATE_TOKEN",
+            required    : true,
+        },
+        MS_PRODUCTS: {
+            info        : "Microservice for manage products",
+            env         : "MS_PRODUCTS",
+            required    : true,
+        }
+    }
 });
 
 export default config;

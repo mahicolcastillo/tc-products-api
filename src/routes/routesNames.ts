@@ -3,8 +3,16 @@ const routeNames = {
         name: 'healthcheck',
         verb: 'GET',
     },
-    getExample: {
-        name: 'getExample',
+    getPublicToken: {
+        name: 'getPublicToken',
+        verb: 'GET',
+    },
+    getProducts: {
+        name: 'getProducts',
+        verb: 'GET',
+    },
+    getCategories: {
+        name: 'getCategories',
         verb: 'GET',
     },
 }
