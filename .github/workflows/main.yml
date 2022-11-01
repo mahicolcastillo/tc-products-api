@@ -139,7 +139,7 @@ jobs:
          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
          heroku_app_name: ${{secrets.HEROKU_APP}}
          heroku_email: ${{secrets.HEROKU_MAIL}}
-         healthcheck: "https://${{secrets.HEROKU_APP}}.herokuapp.com/apis/tc-products-api/healthcheck"
+         healthcheck: "https://${{secrets.HEROKU_APP}}.herokuapp.com/api/tc-products-api/healthcheck"
          rollbackonhealthcheckfailed: true
 
   Release:
