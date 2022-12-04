@@ -1,4 +1,4 @@
-import controller               from '../../../src/components/healtcheck/healthcheck.controller';
+import controller               from '../../../src/components/healthcheck/healthcheck.controller';
 import { Request, Response }    from 'express';
 
 /* eslint-disable */
