@@ -1,6 +1,6 @@
 {
   "name": "tc-products-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API for Products TuComanda",
   "main": "index.js",
   "scripts": {
